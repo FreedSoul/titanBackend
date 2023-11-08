@@ -37,9 +37,7 @@ for element in html_data:
     data.append(sub_data)
 
 # creating dataframe
-dataFrame = pd.DataFrame(data = data, columns = list_header)
+dataFrame = pd.DataFrame(data=data, columns=list_header)
 
 # Converting to CSV
 dataFrame.to_csv('Output.csv')
-
-
