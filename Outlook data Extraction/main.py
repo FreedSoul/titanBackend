@@ -1,11 +1,11 @@
+from bs4 import BeautifulSoup
+from io import StringIO
 import win32com.client
 import pandas as pd
-from io import StringIO
 import numpy as np
-import os
-from bs4 import BeautifulSoup
 import json
 import csv
+import os
 
 # Google Drive path
 g_path = r'G:\My Drive\Daily loads'
@@ -62,14 +62,13 @@ if os.path.exists(r'G:\My Drive\Daily loads\Temp\output.csv'):
 else:
     print("The file does not exist")
 
-#############################
 
-def make_json(csvFilePath, jsonFilePath):
+def make_json(csv_path, json_path):
     # create a dictionary
     data = {}
 
     # Open a csv reader called DictReader
-    with open(csvFilePath, encoding='utf-8') as csv_file:
+    with open(csv_path, encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
 
         # Convert each row into a dictionary
@@ -78,14 +77,14 @@ def make_json(csvFilePath, jsonFilePath):
             key = rows['0']
             data[key] = rows
 
-    # Open a json writer, and use the json.dumps()
-    # function to dump data
-    with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
+    # Open a json writer, and use the json.dumps() function to dump data
+    with open(json_path, 'w', encoding='utf-8') as jsonf:
         jsonf.write(json.dumps(data, indent=4))
 
+
 # Decide the two file paths
-csvFilePath = r'G:\My Drive\Daily loads\final_output.csv'
-jsonFilePath = r'G:\My Drive\Daily loads\json_output.json'
+csv_file_path = r'G:\My Drive\Daily loads\final_output.csv'
+json_file_path = r'G:\My Drive\Daily loads\json_output.json'
 
 # Call the make_json function
-make_json(csvFilePath, jsonFilePath)
+make_json(csv_file_path, json_file_path)
