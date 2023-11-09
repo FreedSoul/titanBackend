@@ -3,8 +3,6 @@ from io import StringIO
 import win32com.client
 import pandas as pd
 import numpy as np
-import json
-import csv
 import os
 
 # Google Drive path
@@ -40,7 +38,7 @@ reshaped = num.reshape(row, columns)
 df = pd.DataFrame(reshaped)
 
 # prints to console the data frame and saves file as .csv
-df.to_csv(r'G:\My Drive\Daily loads\Temp\output.csv', header=False)
+df.to_csv(r'G:\My Drive\Daily loads\Temp\output.csv', header=False, index=False)
 
 # Read the CSV file
 df = pd.read_csv(r'G:\My Drive\Daily loads\Temp\output.csv')
@@ -62,29 +60,5 @@ if os.path.exists(r'G:\My Drive\Daily loads\Temp\output.csv'):
 else:
     print("The file does not exist")
 
-
-def make_json(csv_path, json_path):
-    # create a dictionary
-    data = {}
-
-    # Open a csv reader called DictReader
-    with open(csv_path, encoding='utf-8') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-
-        # Convert each row into a dictionary
-        # and add it to data
-        for rows in csv_reader:
-            key = rows['0']
-            data[key] = rows
-
-    # Open a json writer, and use the json.dumps() function to dump data
-    with open(json_path, 'w', encoding='utf-8') as jsonf:
-        jsonf.write(json.dumps(data, indent=4))
-
-
-# Decide the two file paths
-csv_file_path = r'G:\My Drive\Daily loads\final_output.csv'
-json_file_path = r'G:\My Drive\Daily loads\json_output.json'
-
-# Call the make_json function
-make_json(csv_file_path, json_file_path)
+csv_df = pd.read_csv(r'G:\My Drive\Daily loads\final_output.csv').head()
+df.to_json(r'G:\My Drive\Daily loads\json_output.json', indent=4, orient='records', lines=True)
