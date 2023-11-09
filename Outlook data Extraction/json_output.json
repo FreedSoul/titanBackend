@@ -5,9 +5,9 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"COMMERCIAL SAND",
-        "QTY":3.0,
+        "QTY":15.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -16,9 +16,64 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#57 DOT",
+        "QTY":9.0,
+        "AGG CARRIER":null,
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ANDERSON ROAD MC LOC311",
+        "AGGREGATE SOURCE":"VULCAN ALANZA (Tampa)",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#89 DOT",
+        "QTY":8.0,
+        "AGG CARRIER":null,
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ELLENTON RMC MC LOC299",
+        "AGGREGATE SOURCE":"JAHNA HAINES CITY",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"CONCRETE SAND",
+        "QTY":8.0,
+        "AGG CARRIER":null,
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ELLENTON RMC MC LOC299",
+        "AGGREGATE SOURCE":"VULCAN ALANZA (Tampa)",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#89 DOT",
         "QTY":2.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ELLENTON RMC MC LOC299",
+        "AGGREGATE SOURCE":"VULCAN FT MYERS",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"COMMERCIAL SCREENINGS",
+        "QTY":8.0,
+        "AGG CARRIER":null,
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ELLENTON RMC MC LOC299",
+        "AGGREGATE SOURCE":"VULCAN FT MYERS",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#57",
+        "QTY":15.0,
+        "AGG CARRIER":null,
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -27,7 +82,7 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"CONCRETE SAND",
-        "QTY":18.0,
+        "QTY":10.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
@@ -38,7 +93,7 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#89 DOT",
-        "QTY":10.0,
+        "QTY":6.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
@@ -49,7 +104,29 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#57 DOT",
+        "QTY":6.0,
+        "AGG CARRIER":null,
+        "MG":"Y",
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"PORT OF TAMPA MC LOC751",
+        "AGGREGATE SOURCE":"JAHNA GREENBAY",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"DOT SILICA SAND",
         "QTY":5.0,
+        "AGG CARRIER":null,
+        "MG":"Y",
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"PLANT CITY RMC MC LOC302",
+        "AGGREGATE SOURCE":"PENNSUCO TERMINAL",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#89 DOT",
+        "QTY":10.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
@@ -71,10 +148,21 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"DOT 57",
-        "QTY":10.0,
+        "QTY":20.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"RUSKIN RMC MC LOC303",
+        "AGGREGATE SOURCE":"VULCAN FT MYERS",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"COMMERCIAL SCREENINGS",
+        "QTY":8.0,
+        "AGG CARRIER":null,
+        "MG":"Y",
+        "SPECIAL NOTES":"DELIVERY TIME: 5:00 AM -3:00 PM"
     },
     {
         "PLANT or CUSTOMER":"RUSKIN RMC MC LOC303",
@@ -93,7 +181,7 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#89 DOT",
-        "QTY":5.0,
+        "QTY":2.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
@@ -104,9 +192,9 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#57 DOT",
-        "QTY":15.0,
+        "QTY":10.0,
         "AGG CARRIER":null,
-        "MG":null,
+        "MG":"Y",
         "SPECIAL NOTES":null
     },
     {
@@ -132,6 +220,28 @@
         "SPECIAL NOTES":"8 SCREENINGS"
     },
     {
+        "PLANT or CUSTOMER":"ZEPHYRHILLS RMC MC LOC313",
+        "AGGREGATE SOURCE":"JAHNA GREENBAY",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"DOT SAND",
+        "QTY":4.0,
+        "AGG CARRIER":null,
+        "MG":"Y",
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"ZEPHYRHILLS RMC MC LOC313",
+        "AGGREGATE SOURCE":"VULCAN AUBURNDALE",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#57 DOT",
+        "QTY":4.0,
+        "AGG CARRIER":null,
+        "MG":"Y",
+        "SPECIAL NOTES":null
+    },
+    {
         "PLANT or CUSTOMER":"MAINLINE RMC MC LOC307",
         "AGGREGATE SOURCE":"CORKSCREW",
         "# PICKED UP":null,
@@ -148,7 +258,7 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#57",
-        "QTY":6.0,
+        "QTY":7.0,
         "AGG CARRIER":null,
         "MG":"Y",
         "SPECIAL NOTES":null
@@ -159,19 +269,8 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"COMMERCIAL SAND",
-        "QTY":6.0,
+        "QTY":8.0,
         "AGG CARRIER":null,
-        "MG":"Y",
-        "SPECIAL NOTES":null
-    },
-    {
-        "PLANT or CUSTOMER":"NAPLES RMC MC LOC312",
-        "AGGREGATE SOURCE":"PENNSUCO TERMINAL",
-        "# PICKED UP":null,
-        "# MISSED":null,
-        "AGG MATERIAL":"#89",
-        "QTY":6.0,
-        "AGG CARRIER":"OLYMPIAN 2, SERVISAN 4",
         "MG":"Y",
         "SPECIAL NOTES":null
     },
@@ -181,20 +280,9 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"COMMERCIAL SCREENINGS",
-        "QTY":15.0,
-        "AGG CARRIER":null,
-        "MG":null,
-        "SPECIAL NOTES":null
-    },
-    {
-        "PLANT or CUSTOMER":"NAPLES RMC MC LOC312",
-        "AGGREGATE SOURCE":"VULCAN FT MYERS",
-        "# PICKED UP":null,
-        "# MISSED":null,
-        "AGG MATERIAL":"#57",
         "QTY":10.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -204,8 +292,8 @@
         "# MISSED":null,
         "AGG MATERIAL":"#89",
         "QTY":3.0,
-        "AGG CARRIER":"SERVISAN 2, OLYMPIAN 3",
-        "MG":"Y",
+        "AGG CARRIER":"RA TRUCKING",
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -214,9 +302,9 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"#57",
-        "QTY":7.0,
+        "QTY":8.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -225,9 +313,9 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"COMMERCIAL SAND",
-        "QTY":8.0,
+        "QTY":10.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
         "SPECIAL NOTES":null
     },
     {
@@ -236,6 +324,17 @@
         "# PICKED UP":null,
         "# MISSED":null,
         "AGG MATERIAL":"COMMERCIAL SCREENINGS",
+        "QTY":18.0,
+        "AGG CARRIER":null,
+        "MG":null,
+        "SPECIAL NOTES":null
+    },
+    {
+        "PLANT or CUSTOMER":"VENICE RMC MC LOC305",
+        "AGGREGATE SOURCE":"VULCAN FT MYERS",
+        "# PICKED UP":null,
+        "# MISSED":null,
+        "AGG MATERIAL":"#57",
         "QTY":14.0,
         "AGG CARRIER":null,
         "MG":null,
@@ -246,21 +345,10 @@
         "AGGREGATE SOURCE":"VULCAN FT MYERS",
         "# PICKED UP":null,
         "# MISSED":null,
-        "AGG MATERIAL":"#57",
-        "QTY":8.0,
-        "AGG CARRIER":null,
-        "MG":"Y",
-        "SPECIAL NOTES":null
-    },
-    {
-        "PLANT or CUSTOMER":"VENICE RMC MC LOC305",
-        "AGGREGATE SOURCE":"VULCAN FT MYERS",
-        "# PICKED UP":null,
-        "# MISSED":null,
         "AGG MATERIAL":"#89",
-        "QTY":4.0,
+        "QTY":3.0,
         "AGG CARRIER":null,
-        "MG":"Y",
+        "MG":null,
         "SPECIAL NOTES":null
     }
 ]
