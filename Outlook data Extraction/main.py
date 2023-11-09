@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 from io import StringIO
 import win32com.client
 import pandas as pd
@@ -18,9 +19,15 @@ table = pd.read_html(file)
 # get the number of rows of the list
 row = [len(x) for x in table][0]
 
+# getting headers from the HTML file
+list_header = []
+soup = BeautifulSoup(html_message, 'html.parser')
+header = soup.find_all('table')[0].find('tr')
+column = len(header)
+
 # Converts list to np.array then to a Pandas data frame
 num = np.array(table)
-reshaped = num.reshape(row, 9)
+reshaped = num.reshape(row, column)
 df = pd.DataFrame(reshaped)
 
 # prints to console the data frame and saves file as .csv
