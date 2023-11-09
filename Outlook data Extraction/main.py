@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from io import StringIO
 import win32com.client
 import pandas as pd
