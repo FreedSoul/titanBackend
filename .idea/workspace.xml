@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1af7dd7-57e9-44eb-9a92-30c7088f4dc2" name="Changes" comment="Updated to include .idea/">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Michael Florez &lt;mike.flo@outlook.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikeflo94&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="66252fee-2ff0-44d2-b6bc-502cd5ba4524" />
+        <option name="url" value="https://github.com/FreedSoul/titanBackend" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2XrbjjGB6MSSDwtrM3CCK7S2Qzy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mike&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miflorez/OneDrive - Titan Cement Company SA/Desktop/git/titanBackend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1af7dd7-57e9-44eb-9a92-30c7088f4dc2" name="Changes" comment="" />
+      <created>1699390282902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699390282902</updated>
+      <workItem from="1699390283943" duration="1162000" />
+      <workItem from="1699446381250" duration="261000" />
+      <workItem from="1699446755432" duration="5260000" />
+      <workItem from="1699452444242" duration="12449000" />
+      <workItem from="1699466525094" duration="25000" />
+      <workItem from="1699468060000" duration="4051000" />
+      <workItem from="1699484297788" duration="4694000" />
+      <workItem from="1699532731119" duration="136000" />
+      <workItem from="1699532881142" duration="23000" />
+      <workItem from="1699532936057" duration="558000" />
+      <workItem from="1699533560780" duration="177000" />
+      <workItem from="1699533767076" duration="396000" />
+      <workItem from="1699534179682" duration="162000" />
+      <workItem from="1699534875526" duration="760000" />
+      <workItem from="1699535649534" duration="138000" />
+      <workItem from="1699535797925" duration="364000" />
+      <workItem from="1699536191145" duration="738000" />
+      <workItem from="1699536946654" duration="623000" />
+      <workItem from="1699542648469" duration="61000" />
+      <workItem from="1699542721030" duration="2520000" />
+      <workItem from="1699554388397" duration="232000" />
+      <workItem from="1699554804247" duration="2992000" />
+      <workItem from="1699560251950" duration="169000" />
+    </task>
+    <task id="LOCAL-00001" summary="Last update, missing ','">
+      <option name="closed" value="true" />
+      <created>1699489508125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699489508125</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Files/code clean up">
+      <option name="closed" value="true" />
+      <created>1699536623040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699536623040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updating json and csv files">
+      <option name="closed" value="true" />
+      <created>1699554453844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699554453844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated to include .idea/">
+      <option name="closed" value="true" />
+      <created>1699557509729</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699557509729</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Last update, missing ','" />
+    <MESSAGE value="Files/code clean up" />
+    <MESSAGE value="Updating json and csv files" />
+    <MESSAGE value="Updated to include .idea/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to include .idea/" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/titanBackend$main.coverage" NAME="main Coverage Results" MODIFIED="1699544589200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Outlook data Extraction" />
+  </component>
+</project>
