@@ -8,16 +8,28 @@ import {
 } from "@tanstack/react-table";
 import { FC } from "react";
 
+// export type Row = {
+//   "PLANT/CUSTOMER": string;
+//   "AGGREGATE SOURCE": string;
+//   "# PICKED UP": null;
+//   "# MISSED": null;
+//   "AGG MATERIAL": string;
+//   QTY: number;
+//   "AGG CARRIER": null;
+//   MG: null;
+//   "SPECIAL NOTES": null;
+// };
 export type Row = {
-  "PLANT or CUSTOMER": string;
-  "AGGREGATE SOURCE": string;
-  "# PICKED UP": null;
-  "# MISSED": null;
-  "AGG MATERIAL": string;
-  QTY: number;
-  "AGG CARRIER": null;
-  MG: null;
-  "SPECIAL NOTES": null;
+  "PLANT/CUSTOMER": string|null;
+  "AGGREGATE SOURCE": string|null;
+  "QTY LOADED": string|null;
+  "QTY MISSED": string|null;
+  "AGG MATERIAL": string|null;
+  QTY: string|null;
+  "AGG CARRIER": string|null;
+  MG: string|null;
+  STATUS: string|null;
+  "SPECIAL NOTES": string|null;
 };
 
 interface tableProps {
@@ -28,11 +40,17 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
   const columnHelper = createColumnHelper<Row>();
 
   const columns = [
-    columnHelper.accessor("PLANT or CUSTOMER", {
-      cell: (info) => info.getValue(),
-      footer: (info) => info.column.id,
-    }),
-    columnHelper.accessor((row) => row["PLANT or CUSTOMER"], {
+    // columnHelper.accessor((row) => row["PLANT or CUSTOMER"], {
+    //   id: "PLANT or CUSTOMER",
+    //   cell: (info) => <i>{info.getValue()}</i>,
+    //   header: () => <span>PLANT or CUSTOMER</span>,
+    //   footer: (info) => info.column.id,
+    // }),
+    // columnHelper.accessor("PLANT or CUSTOMER", {
+    //   cell: (info) => info.getValue(),
+    //   footer: (info) => info.column.id,
+    // }),
+    columnHelper.accessor((row) => row["PLANT/CUSTOMER"], {
       id: "PLANT or CUSTOMER",
       cell: (info) => <i>{info.getValue()}</i>,
       header: () => <span>PLANT or CUSTOMER</span>,
@@ -43,11 +61,11 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
       cell: (info) => info.renderValue(),
       footer: (info) => info.column.id,
     }),
-    columnHelper.accessor("# PICKED UP", {
-      header: () => <span>Visits</span>,
+    columnHelper.accessor("QTY LOADED", {
+      header: () => <span>Picked Up</span>,
       footer: (info) => info.column.id,
     }),
-    columnHelper.accessor("# MISSED", {
+    columnHelper.accessor("QTY MISSED", {
       header: "# MISSED",
       footer: (info) => info.column.id,
     }),
@@ -65,13 +83,23 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
       cell: (info) => info.renderValue(),
       footer: (info) => info.column.id,
     }),
+    columnHelper.accessor("MG", {
+      header: () => "MG",
+      cell: (info) => info.renderValue(),
+      footer: (info) => info.column.id,
+    }),
+    columnHelper.accessor("STATUS", {
+      header: () => "STATUS",
+      cell: (info) => info.renderValue(),
+      footer: (info) => info.column.id,
+    }),
     columnHelper.accessor("SPECIAL NOTES", {
       header: () => "SPECIAL NOTES",
       cell: (info) => info.renderValue(),
       footer: (info) => info.column.id,
     }),
   ];
-  //   console.log(dataJson);
+  // console.log(dataJson);
   const [data, setData] = useState(() => [...dataJson]);
   const rerender = useReducer(() => ({}), {})[1];
 
@@ -83,12 +111,12 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
   return (
     <div>
       <div className="p-2">
-        <table>
+        <table className="border-collapse border border-slate-500 ">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <th key={header.id}>
+                  <th key={header.id} className="border border-slate-500">
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -102,7 +130,7 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
           </thead>
           <tbody>
             {table.getRowModel().rows.map((row) => (
-              <tr key={row.id}>
+              <tr key={row.id} className="border border-slate-500 ">
                 {row.getVisibleCells().map((cell) => (
                   <td key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -111,7 +139,7 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
               </tr>
             ))}
           </tbody>
-          <tfoot>
+          {/* <tfoot>
             {table.getFooterGroups().map((footerGroup) => (
               <tr key={footerGroup.id}>
                 {footerGroup.headers.map((header) => (
@@ -126,14 +154,16 @@ const TableJson: FC<tableProps> = async ({ dataJson }) => {
                 ))}
               </tr>
             ))}
-          </tfoot>
+          </tfoot> */}
         </table>
-        <div className="h-4" />
-        <button onClick={() => rerender()} className="border p-2">
+        <div className="h-10" />
+        <button
+          onClick={() => rerender()}
+          className="border-white border-2 border- p-2"
+        >
           Rerender
         </button>
       </div>
-      
     </div>
   );
 };
