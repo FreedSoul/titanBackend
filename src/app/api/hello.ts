@@ -9,5 +9,5 @@ export default function handler(
   res: NextApiResponse<ResponseData>
 ) {
   
-  Response.status(200).json({ message: 'Hello from Next.js!' })
+  // Response.status(200).json({ message: 'Hello from Next.js!' })
 }
