@@ -9,6 +9,27 @@ import {
   getSortedRowModel,
 } from "@tanstack/react-table";
 import { FC } from "react";
+import twMerge from "clsx";
+
+if (typeof window !== 'undefined') {
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('theme',"dark")
+  } else {
+    document.documentElement.classList.remove('dark')
+    localStorage.removeItem('theme')
+  }
+  
+  // Whenever the user explicitly chooses light mode
+  localStorage.theme = 'light'
+  
+  // Whenever the user explicitly chooses dark mode
+  localStorage.theme = 'dark'
+  
+  // Whenever the user explicitly chooses to respect the OS preference
+  // localStorage.removeItem('theme')
+  
+}
 
 function DebouncedInput({
   value: initialValue,
@@ -60,7 +81,13 @@ interface tableProps {
   dataJson: Array<Row>;
 }
 
+
 const TableJson: FC<tableProps> = ({ dataJson }) => {
+  function toggleDarkMode(){
+    document.documentElement.classList.toggle('dark')
+  }
+
+  
   const columnHelper = createColumnHelper<Row>();
 
   const columns = [
@@ -115,9 +142,18 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
   ];
   // console.log(dataJson);
   const [data, setData] = useState(() => [...dataJson]);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
   const [filtering, setFiltering] = useState<string>("");
   const [sorting, setSorting] = useState([]);
   const rerender = useReducer(() => ({}), {})[1];
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+    let value = window.localStorage.getItem("theme") || "light"
+    value === 'light'? setDarkMode(false): setDarkMode(true)
+    }
+    console.log(darkMode);
+  }, [])
 
   const table = useReactTable({
     data,
@@ -131,14 +167,26 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
   });
   return (
     <div>
-      <div className="p-2">
+      <div className="p-4 space-x-10">
         <DebouncedInput
-          className="text-black"
+          // className="text-black border-2 border-dashed p-1 bg-teal-400 placeholder:text-black"
+          className="px-4 py-2 border-2 border-teal-400 rounded-sm outline-none  focus:border-grey-700 text-black"
           type="text"
-          value={filtering??''}
-          onChange={value => setFiltering(String(value))}
+          value={filtering ?? ""}
+          onChange={(value) => setFiltering(String(value))}
           placeholder="type to filter"
         />
+        <button
+          onClick={() => {toggleDarkMode(), setDarkMode(darkMode=>!darkMode)}}
+          className={twMerge(
+            "relative inline-flex items-center border-2 border-teal-500 px-4 py-2 text-sm font-semibold transition-colors focus:z-10",
+            "dark:focus:border-teal-400 dark:focus:ring-teal-400 hover:bg-teal-400 hover:text-black hover:dark:text-white",
+          )}
+        >
+          {darkMode === false ?'Dark Mode':'Light Mode'} 
+        </button> 
+      </div>
+      <div className="p-4">
         <table className="border-collapse border border-slate-500 ">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -146,7 +194,7 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
                 {headerGroup.headers.map((header) => (
                   <th
                     key={header.id}
-                    className="border border-slate-500"
+                    className="border border-slate-500 bg-teal-500 text-black dark:bg-black dark:text-teal-500"
                     onClick={header.column.getToggleSortingHandler()}
                   >
                     {header.isPlaceholder
@@ -155,11 +203,6 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
                           header.column.columnDef.header,
                           header.getContext()
                         )}
-                    {/* {
-                            {asc:'⬆👆', desc: '⬇🔻👇'}[
-                                header.column.getIsSorted() ?? null
-                            ]
-                        } */}
                   </th>
                 ))}
               </tr>
@@ -167,7 +210,7 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
           </thead>
           <tbody>
             {table.getRowModel().rows.map((row) => (
-              <tr key={row.id} className="border border-slate-500 ">
+              <tr key={row.id} className="border-teal-500 border-2 dark:border-black ">
                 {row.getVisibleCells().map((cell) => (
                   <td key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -176,11 +219,11 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
               </tr>
             ))}
           </tbody>
-          {/* <tfoot>
+          <tfoot>
             {table.getFooterGroups().map((footerGroup) => (
               <tr key={footerGroup.id}>
                 {footerGroup.headers.map((header) => (
-                  <th key={header.id}>
+                  <th key={header.id} className="border border-slate-500 bg-teal-500 text-black dark:bg-black dark:text-teal-500">
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -191,12 +234,15 @@ const TableJson: FC<tableProps> = ({ dataJson }) => {
                 ))}
               </tr>
             ))}
-          </tfoot> */}
+          </tfoot>
         </table>
         <div className="h-10" />
         <button
-          onClick={() => rerender()}
-          className="border-white border-2 border- p-2"
+          onClick={() => {rerender()}}
+          className={twMerge(
+            "relative inline-flex items-center border-2 border-teal-500 px-4 py-2 text-sm font-semibold transition-colors focus:z-10 focus:outline-none focus:ring-1",
+            "dark:focus:border-teal-400 dark:focus:ring-teal-400 hover:bg-teal-400 hover:text-black hover:dark:text-white",
+          )}
         >
           Rerender
         </button>
