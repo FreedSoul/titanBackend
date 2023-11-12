@@ -1,13 +1,17 @@
 import Image from "next/image";
-import handler from "./api/hello";
 import getTableData from "./api/tablesData/route";
 import { Suspense } from "react";
 import type { Row } from "./components/tableJson";
-import TableJson from "../app/components/tableJson"
+import TableJson from "../app/components/tableJson";
+import path from "path";
+import { promises as fs } from 'fs';
 
 export default async function Home() {
-  const datatable: Row[] = await getTableData();
-  // console.log(datatable,'---------------------');
+  // const datatable: Row[] = await getTableData();
+  // const datatable: Row[] = data
+  const file = await fs.readFile(process.cwd() + "/Outlook data Extraction/json_output.json", 'utf8');
+  const datatable:Row[] = JSON.parse(file); 
+  // console.log(data,'---------------------');
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10 dark:bg-slate-300 bg-slate-900  dark:text-black text-white">
       {/* <h1>{data}</h1> */}
