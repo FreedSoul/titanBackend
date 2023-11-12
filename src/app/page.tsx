@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Suspense } from "react";
 import type { Row } from "./components/tableJson";
 import TableJson from "../app/components/tableJson";
-import path from "path";
 import { promises as fs } from 'fs';
 
 export default async function Home() {
