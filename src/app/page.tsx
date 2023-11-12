@@ -1,5 +1,5 @@
 import Image from "next/image";
-import getTableData from "./api/tablesData/route";
+// import getTableData from "./api/tablesData/route";
 import { Suspense } from "react";
 import type { Row } from "./components/tableJson";
 import TableJson from "../app/components/tableJson";

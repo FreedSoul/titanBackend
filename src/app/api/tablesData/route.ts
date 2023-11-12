@@ -1,4 +1,4 @@
-"use server";
+
 import fs from 'fs'
 import { type NextRequest, type NextResponse } from 'next/server';
 import path from 'path';
@@ -6,7 +6,7 @@ import fsPromises from 'fs/promises';
 
 // Specify the path to your JSON file
 export default async function getTableData() {
-  // "use server";
+  
   const filePath = path.join(process.cwd(), './Outlook data Extraction/json_output.json');
   let data: string = await fsPromises.readFile(filePath, 'utf8')
   let jsonData = JSON.parse(data)
